@@ -1,28 +1,36 @@
-# SysAdmin Lab 01 — Linux Security Basics
+# 🔐 Servidor Linux Seguro
 
-Este repositório faz parte do meu plano de estudos prático em
-Administração de Sistemas Linux com foco em segurança básica,
-infraestrutura e boas práticas profissionais.
+Projeto prático de SysAdmin focado em segurança básica de servidores Linux,
+simulando a entrega de um servidor para um cliente real.
 
-## Objetivo do projeto
-Implementar configurações iniciais de segurança em um servidor Linux,
-documentando cada decisão técnica.
+## 🎯 Objetivo
+Criar e proteger um servidor Linux aplicando boas práticas de segurança,
+controle de acesso e firewall.
 
-## Conteúdo
-- Endurecimento básico de SSH
-- Organização de arquivos de configuração
-- Documentação técnica clara
+## 🛠️ Tecnologias Utilizadas
+- Linux (Ubuntu Server)
+- AWS EC2
+- SSH com autenticação por chave
+- Firewall UFW
 
-## Estrutura do repositório
-configs/
-  sshd_config
-docs/
-  README.md
+## 🔒 Segurança Implementada
+- Login root desativado
+- Acesso SSH somente por chave
+- Usuários com privilégios mínimos (sudo controlado)
+- Firewall UFW ativo (deny incoming / allow outgoing)
+- Testes de acesso após hardening
 
-## Tecnologias utilizadas
-- Linux
-- OpenSSH
-- Git & GitHub
+## 🧪 Testes Realizados
+- Login SSH via chave (usuário sysadmin)
+- Bloqueio de login root
+- Validação de firewall ativo sem perda de acesso
+- Controle de permissões sudo
 
-## Status
-Em desenvolvimento
+## 📌 Cenário Real
+Este projeto simula a configuração de um servidor Linux seguro para uma
+pequena empresa ou profissional que precisa de acesso remoto confiável.
+
+## 👨‍💻 Autor
+Igor Cesar  
+SysAdmin / Infraestrutura (em formação)
+
